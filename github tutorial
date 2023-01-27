@@ -1,0 +1,40 @@
+Github walkthrough
+
+• Login
+• click “New” to create new repo.   Make it public.    Can (should) go back and make it private.
+• drag in files to stage them    # staging -- think of this like drafts, preliminary versions
+• commit     # the drafts are now verions
+• edit a file right on the repo    # now you have a newly revised draft
+• commit    # it's a new version
+• Click on commits history link      #  see the version history 
+• Click on <commitid>          # view the actual diffs
+• edit one of the files offline, then drag in and commit    # you've updated and revved the version
+
+• click branch Dropdown and Create a new branch -- see that it's got all the same files   # if you wanted to try something new for example, separate platform, separate developer or bug fixing
+• click branch Dropdown and switch to that branch
+• commit to this branch
+• See all the informational notifications!    Note prompt for “pull request” -- meaning a request for someone to look at file diffs and approve merging branch changes back into main
+• click on the commits history link while in each branch      # see the file histories within a branch.   Same file in different branches will have different histories
+
+• click on Pull Request     # system looks to see if there were conflicting changes, eg another branch with a directly conflicting change, then prompts you to merge back into the main branch
+• click on merge     # Squash will simplify the commit history.    non-squash keeps all those branch commits visible in commit history.    (nothing will be lost though)
+
+• git clone <url>    # copy repo over to another location or machine.   Can do this if the repo is public
+• cd <reponame>      # want to be at the same level as the .git directory
+• change a file
+• git push                 # can't use password for this.   need a token
+   ◇ dropdown urh profile icon, Settings
+   ◇ SSH and GPG keys -- SSH
+      ▪ ssh-keygen       # at commandline pick an “identity” filename like id_rsa-github
+      ▪ put the public key  (blah.pub)  in the SSH page for account on github
+      ▪  ssh -i /home/connie/.ssh/id_rsa-github -T git@github.com    # test the key
+      ▪ git remote set-url origin git@github.com:conniest/testrepo.git      # 
+ 
+
+
+
+Git
+
+man gittutorial
+man giteveryday
+
